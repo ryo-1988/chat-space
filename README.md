@@ -24,12 +24,12 @@ Things you may want to cover:
 * ...
 ## messagesテーブル
 
-|Column|Type|Option|index|
-|------|----|------|-----|
-|body|text|
-|image|string|
-|group_id|references :group|foreign_key: true|○|
-|user_id|references :user|foreign_key: true|○|
+|Column|Type|Notnull|Option|index|
+|------|----|-------|------|-----|
+|body|text|○|
+|image|string|○|
+|group_id|references :group|○|foreign_key: true|○|
+|user_id|references :user|○|foreign_key: true|○|
 
 ### Association
 - belongs_to :user
@@ -37,9 +37,9 @@ Things you may want to cover:
 
 ## usersテーブル
 
-|Column|Type|Options|index|
-|------|----|-------|-----|
-|name|string|null: false, unique: true|○|
+|Column|Type|Notnull|Options|index|
+|------|----|-------|-------|-----|
+|name|string|○|null: false, unique: true|○|
 
 ###Association
 - has_many :messages
@@ -48,9 +48,9 @@ Things you may want to cover:
 
 ## groupsテーブル
 
-|Columns|Type|Options|index|
-|-------|----|-------|-----|
-|name|string|null: false|
+|Columns|Type|Notnull|Options|index|
+|-------|----|-------|-------|-----|
+|name|string|○|null: false|
 
 ###Association
 - has_many :messages
@@ -59,10 +59,10 @@ Things you may want to cover:
 
 ## group_membersテーブル
 
-|Columns|Type|Options|index|
-|-------|----|-------|-----|
-|group_id|references :group|foreign_key: true|○|
-|user_id|references|foreign_key: true|○|
+|Columns|Type|Notnull|Options|index|
+|-------|----|-------|-------|-----|
+|group_id|references :group|○|foreign_key: true|○|
+|user_id|references|○|foreign_key: true|○|
 
 ### Associaion
 - belongs_to :user
