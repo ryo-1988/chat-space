@@ -28,8 +28,8 @@ Things you may want to cover:
 |------|----|-------|------|-----|
 |body|text|○|
 |image|string|○|
-|group_id|references :group|○|foreign_key: true|○|
-|user_id|references :user|○|foreign_key: true|○|
+|group_id|references|○|foreign_key: true|○|
+|user_id|references|ß○|foreign_key: true|○|
 
 ### Association
 - belongs_to :user
@@ -61,7 +61,7 @@ Things you may want to cover:
 
 |Columns|Type|Notnull|Options|index|
 |-------|----|-------|-------|-----|
-|group_id|references :group|○|foreign_key: true|○|
+|group_id|references|○|foreign_key: true|○|
 |user_id|references|○|foreign_key: true|○|
 
 ### Associaion
