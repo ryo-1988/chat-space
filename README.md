@@ -29,7 +29,7 @@ Things you may want to cover:
 |body|text|○|
 |image|string|○|
 |group_id|references|○|foreign_key: true|○|
-|user_id|references|ß○|foreign_key: true|○|
+|user_id|references|○|foreign_key: true|○|
 
 ### Association
 - belongs_to :user
