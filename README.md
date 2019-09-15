@@ -26,10 +26,10 @@ Things you may want to cover:
 
 |Column|Type|Notnull|Option|index|
 |------|----|-------|------|-----|
-|body|text|○|
-|image|string|○|
-|group_id|references|○|foreign_key: true|○|
-|user_id|references|○|foreign_key: true|○|
+|body|text|YES|
+|image|string|YES|
+|group_id|references|YES|foreign_key: true|YES|
+|user_id|references|YES|foreign_key: true|YES|
 
 ### Association
 - belongs_to :user
@@ -39,7 +39,7 @@ Things you may want to cover:
 
 |Column|Type|Notnull|Options|index|
 |------|----|-------|-------|-----|
-|name|string|○|null: false, unique: true|○|
+|name|string|YES|null: false, unique: true|YES|
 
 ###Association
 - has_many :messages
@@ -50,7 +50,7 @@ Things you may want to cover:
 
 |Columns|Type|Notnull|Options|index|
 |-------|----|-------|-------|-----|
-|name|string|○|null: false|
+|name|string|YES|null: false|
 
 ###Association
 - has_many :messages
@@ -61,8 +61,8 @@ Things you may want to cover:
 
 |Columns|Type|Notnull|Options|index|
 |-------|----|-------|-------|-----|
-|group_id|references|○|foreign_key: true|○|
-|user_id|references|○|foreign_key: true|○|
+|group_id|references|YES|foreign_key: true|YES|
+|user_id|references|YES|foreign_key: true|YEs|
 
 ### Associaion
 - belongs_to :user
