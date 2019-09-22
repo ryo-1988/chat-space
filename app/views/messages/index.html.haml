@@ -5,19 +5,48 @@
 .chat-side
   .chat-side__side-header
     .chat-side__side-header-box
-    test
-    .chat-side__box-menu
-    = fa_icon "edit"
-    = fa_icon "cog"
+      .chat-side__side-header-box-user-name
+        test
+      .chat-side__side-header-box-menu
+    .chat-side__side-header-box-menu-new-group
+      = fa_icon "edit"
+    .chat-side__side-header-box-menu-edit-user
+      = fa_icon "cog"
   .chat-side__groups
-    sample
+    .chat-side__group
+      .chat-side__group-name
+        sample
+      .chat-side__messages
+        Good bye word    
     
 .chat-main
   .chat-main__main-header
-    sample
+    .ctat-main__left-box
+      .chat-main__left-box-group
+        test
+      .chat-main__left-box-member
+        Member: test
+    .chat-main__edit-btn
+      Edit
   .chat-main__messages
-    seo
+    .chat-main__data-message
+      .chat-main__message-upper-box
+      .chat-main__message-upper
+        test
+      .chat-main__message-upper-info
+        2019/09/22(sun) 12:00:30
+      .chat-main__message-text
+        hello
   .chat-main__form
-    type a message
-  .chat-main__form-form
-  .chat-main__form-form-input-box
+    .chat-main__new-message
+      .chat-main__input-box
+        .chat-main__input-box-logo
+          type a message
+        .chat-main__input-box-image
+          .chat-main__input-box-message-image
+            =fa_icon "image"
+      .chat-main__submit-btn
+        Send
+
+
+
